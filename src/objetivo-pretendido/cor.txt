@@ -1,0 +1,2 @@
+//corPrimaria = #004953;
+//corSecundaria = #F9F07E;

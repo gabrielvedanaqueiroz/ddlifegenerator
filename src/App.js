@@ -2,11 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 import Footer from './components/footer';
 import Header from './components/header';
+import TileItem from './components/tileitem';
 
 function App() {
+
   return (
     <div className="App">
       <Header/>
+
+      <TileItem id='id-xpto' vida='99'/>
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -4,37 +4,11 @@
   bottom: 0;
   width: 100%;
   height: 32px;
-  background-color: white;
+  background-color: #004953;
   display: flex;
   justify-content: left;
   padding: 10px 0;
 }
-
-.ft_button_disfarcado {
-  text-decoration: none;
-  background: none;
-  border: none;
-  color: black;
-  font-size: 18px;
-  cursor: pointer;
-  padding: 10px 20px;
-  display: flex;
-}
-
-.ft_button_disfarcado:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  transform: scale(1.1);
-}
-
-.ft_button_disfarcado:active {
-  transform: scale(0.9);
-}
-
-.ft_bottom-bar img{
-  height: 25px;
-}
-
 
 /* Floating Action Button */
 .fab {
@@ -43,7 +17,7 @@
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #ff5722;
+  background-color: #F9F07E; 
   color: white;
   border: none;
   border-radius: 50%;
@@ -58,7 +32,7 @@
 }
 
 .fab:hover {
-  background-color: #e64a19;
+  background-color: #ccc344; 
   transform: scale(1.1);
 }
 

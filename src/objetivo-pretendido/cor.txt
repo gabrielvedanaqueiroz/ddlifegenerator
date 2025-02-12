@@ -1,2 +1,4 @@
 //corPrimaria = #004953;
 //corSecundaria = #F9F07E;
+//corSecundariaHover = #ccc344;
+//achei um preto bonito #282c34;

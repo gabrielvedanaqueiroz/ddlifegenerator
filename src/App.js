@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header/>
 
-      <TileItem id='id-xpto' vida='99'/>
+      <TileItem id='id-xpto' vida='99' descricao='npc'/>
       
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

@@ -2,6 +2,11 @@ import  './tileitem.css';
 import { useState } from 'react';
 import {db} from '../../services/firebaseConnection';
 import {doc, updateDoc, deleteDoc} from 'firebase/firestore';
+import img_npc from '../../res/npc.png';
+import img_vida from '../../res/vida.png';
+import img_inc from '../../res/inc.svg';
+import img_dec from '../../res/dec.svg';
+import img_delete from '../../res/delete.svg';
 
 function TileItem(props){
   
@@ -52,10 +57,21 @@ function TileItem(props){
 
   return(
     <div id={id} className='div-item'>
-      TileItem {vida} <br/>
-      <button onClick={onInc}>incrementar</button>
-      <button onClick={onDec}>decrementar</button>
-      <button onClick={onExcluir}>excluir</button>
+      <img className='item-logo' src={img_npc} alt='npc'/>
+      <div className='item-conteudo'>
+        <div className='item-label'>{props.descricao}</div>
+        <div className='item-segunda-linha'>
+          <div className='item-div-vida'>
+            <img className='item-img-vida' src={img_vida} alt ='vida'/>
+            <div className='item-label-vida'>{vida}</div>
+          </div>
+          <button className='item-botao' onClick={onExcluir}><img className='item-img-vida' src={img_delete} alt='excluir'/></button>
+          <div className='item-div-botoes'>
+            <button className='item-botao' onClick={onInc}><img className='item-img-vida' src={img_inc} alt='incrementar'/></button>
+            <button className='item-botao' onClick={onDec}><img className='item-img-vida' src={img_dec} alt='decrementar'/></button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

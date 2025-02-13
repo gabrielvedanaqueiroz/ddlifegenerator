@@ -48,6 +48,7 @@ li{
 .item_div-vida{
   display: flex;
   flex-direction: row;  
+  align-items: center;
 }
 
 .item-img-vida{

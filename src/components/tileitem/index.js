@@ -31,17 +31,15 @@ function TileItem(props){
   async function onInc(){
     let LVida = vida;
     LVida = ++LVida;
-    
-    setVida(LVida);
-    //await onSalvar(LVida);
+        
+    await onSalvar(LVida);
   }
 
   async function onDec(){
     let LVida = vida;
     LVida = --LVida;
     
-    setVida(LVida);
-    //await onSalvar(LVida);
+    await onSalvar(LVida);
 
   }
 
@@ -56,23 +54,23 @@ function TileItem(props){
   };
 
   return(
-    <div id={id} className='div-item'>
-      <img className='item-logo' src={img_npc} alt='npc'/>
-      <div className='item-conteudo'>
-        <div className='item-label'>{props.descricao}</div>
-        <div className='item-segunda-linha'>
-          <div className='item-div-vida'>
+    <li key={id} className='item_container'>
+      <img className='item_logo' src={img_npc} alt='npc'/>
+      <div className='item_conteudo'>
+        <div className='item_label-descricao'>{props.descricao}</div>
+        <div className='item_segunda-linha'>
+          <div className='item_div-vida'>
             <img className='item-img-vida' src={img_vida} alt ='vida'/>
-            <div className='item-label-vida'>{vida}</div>
-          </div>
-          <button className='item-botao' onClick={onExcluir}><img className='item-img-vida' src={img_delete} alt='excluir'/></button>
-          <div className='item-div-botoes'>
-            <button className='item-botao' onClick={onInc}><img className='item-img-vida' src={img_inc} alt='incrementar'/></button>
-            <button className='item-botao' onClick={onDec}><img className='item-img-vida' src={img_dec} alt='decrementar'/></button>
+            <div className='item_label-vida'>{vida}</div>
+          </div>          
+          <div className='item_div-botoes'>
+            <button className='item_botao-delete' onClick={onExcluir}><img className='item-img' src={img_delete} alt='excluir'/></button>
+            <button className='item_botao' onClick={onDec}><img className='item-img' src={img_dec} alt='decrementar'/></button>
+            <button className='item_botao' onClick={onInc}><img className='item-img' src={img_inc} alt='incrementar'/></button>            
           </div>
         </div>
       </div>
-    </div>
+    </li>
   );
 }
 

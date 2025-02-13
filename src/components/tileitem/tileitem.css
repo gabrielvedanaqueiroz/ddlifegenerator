@@ -1,14 +1,20 @@
-.div-item{
-  height: 65px;
-  background-color: green;
-  padding: 8px;
-  display: flex;
-  flex-direction: row; 
-  margin-bottom: 2px;
-  border-color: #F9F07E;
+li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.item-logo{
+.item_container{
+  text-decoration: none;
+  height: auto;
+  background-color: #282c34;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: row; 
+  border-bottom: 1px solid #F9F07E;
+}
+
+.item_logo{
   width: 50px;
   height: 50px;
   margin-right: 8px;
@@ -17,7 +23,7 @@
   border-radius: 4px;
 }
 
-.item-conteudo{
+.item_conteudo{
   width: 100%;
   display: flex;
   align-items: start; 
@@ -25,11 +31,12 @@
   justify-content: space-between;
 }
 
-.item-label{
+.item_label-descricao{
   font-size: 20px;
+  color: #F9F07E;
 }
 
-.item-segunda-linha{
+.item_segunda-linha{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -38,29 +45,30 @@
   width: 100%;
 }
 
-.item-div-vida{
+.item_div-vida{
   display: flex;
   flex-direction: row;  
 }
 
 .item-img-vida{
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   margin-right: 2px; 
 }
 
-.item-label-vida{
-  font-size: 15px;
+.item_label-vida{
+  font-size: 20px;
+  color: #F9F07E;
 }
 
-.item-div-botoes{
+.item_div-botoes{
   display: flex;
   justify-content: right;
   width: 75%; 
   margin-left: 8px;
 }
 
-.item-botao{
+.item_botao{
   margin-left: 8px;
   text-decoration: none;
   border: none;
@@ -68,14 +76,42 @@
   border-radius: 4px;
   align-items: center;
   display: flex;
-  height: auto;
+  height: 38px;
+  width: 38px;
   padding: 4px;
 }
 
-.item-botao:active {
+.item_botao:active {
   transform: scale(0.9);
 }
 
-.item-botao:hover{
+.item_botao:hover{
   background-color: #ccc344;
+}
+
+.item_botao-delete{
+  margin-right: 32px;
+  text-decoration: none;
+  border: none;
+  background: #F9F07E;
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+  height: 38px;
+  width: 38px;
+  padding: 4px;
+}
+
+.item_botao-delete:active {
+  transform: scale(0.9);
+}
+
+.item_botao-delete:hover{
+  background-color: #ccc344;
+}
+
+.item-img{
+  width: 28px;
+  height: 28px;
+  margin-right: 2px; 
 }

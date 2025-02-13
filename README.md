@@ -1,3 +1,35 @@
+DDLifeGenerator
+
+Este é um projeto em **React** para gerenciar uma lista de monstros de RPG, permitindo controlar a vida deles (tanto para perda quanto para ganho). Primeiro pojeto em react com o intuiro de aprender 
+
+## 📦 Tecnologias Utilizadas
+
+- **React** ⚛️
+- **react-toastify** (Notificações)  
+- **firebase** (Banco de dados)  
+
+* Instale os pacotes necessários:
+  npm install --save react-toastify
+  npm install firebase
+
+📌 Funcionalidades
+  • 📜 Listagem de monstros; 
+  •  +  Criar um novo item na lsita de monstros;
+  •  -  Remover item da lista;
+  • ❤️ Controle de vida (adicionar e remover pontos); 
+  • 🔔 Notificações visíveis de erros do sistema ou erros de cadastro.
+
+📝 Estrutura do Projeto
+📂 src
+ ├── 📂 components     # Componentes reutilizáveis
+ ├── 📂 pages          # Páginas da aplicação
+ ├── 📂 res            # recursos de imagens e afins
+ ├── 📂 services       # Conexão com Firebase
+ ├── 📜 App.js         # Arquivo principal
+ ├── 📜 index.js       # Ponto de entrada
+
+# Notas do React
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
